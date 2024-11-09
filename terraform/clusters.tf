@@ -32,7 +32,7 @@ resource "google_compute_subnetwork" "default" {
 resource "google_container_cluster" "default" {
   name = "cluster-1"
 
-  location                 = "europe-west2-b"
+  location                 = "europe-west2"
   enable_autopilot         = true
   enable_l4_ilb_subsetting = true
 
