@@ -1,3 +1,6 @@
+provider "google" {
+    project = "solar-spot-441118-v2"
+}
 resource "google_compute_instance" "default" {
   name         = "debian-tftest-1"
   machine_type = "e2-micro"
