@@ -12,7 +12,7 @@ resource "google_compute_subnetwork" "default" {
   name = "subnetwork-1"
 
   ip_cidr_range = "10.0.0.0/16"
-  region        = "europe-west2-b"
+  region        = "europe-west2"
 
   stack_type       = "IPV4_IPV6"
   ipv6_access_type = "INTERNAL" # Change to "EXTERNAL" if creating an external loadbalancer
