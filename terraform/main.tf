@@ -9,4 +9,10 @@ resource "google_compute_instance" "vm_instance" {
       image = "debian-cloud/debian-11"
     }
   }
+
+  metadata_startup_script = "sudo apt-get update;"
+
+  network_interface {
+    subnetwork = google_compute_subnetwork.default.id
+  }
 }
