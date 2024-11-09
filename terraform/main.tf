@@ -13,6 +13,6 @@ resource "google_compute_instance" "vm_instance" {
   metadata_startup_script = "sudo apt-get update;"
 
   network_interface {
-    subnetwork = google_compute_subnetwork.default.id
+    network = "default"
   }
 }
