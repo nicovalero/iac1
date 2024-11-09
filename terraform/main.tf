@@ -1,4 +1,4 @@
-resource "google_compute_instance" "vm_instance" {
+resource "google_compute_instance" "default" {
   name         = "debian-tftest-1"
   machine_type = "e2-micro"
   zone         = "europe-west2-b"
