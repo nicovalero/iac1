@@ -1,6 +1,3 @@
-provider "google" {
-    project = "solar-spot-441118-v2"
-}
 resource "google_pubsub_topic" "topic-euwest3-1" {
   name = "topic-euwest3-1"
   message_storage_policy {

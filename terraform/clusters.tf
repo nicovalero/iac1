@@ -1,6 +1,3 @@
-provider "google" {
-    project = "solar-spot-441118-v2"
-}
 resource "google_compute_network" "default" {
   name = "network-1"
 
